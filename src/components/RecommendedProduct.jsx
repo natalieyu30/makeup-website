@@ -8,7 +8,7 @@ export default function RecommendedProduct(product) {
 
   useEffect(() => {
     getRecommendedProducts(product);
-  }, [product]);
+  }, [product, getRecommendedProducts]);
   // console.log(recommendedProducts);
 
   return (

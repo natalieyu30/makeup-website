@@ -3,6 +3,8 @@ import axios from "axios";
 
 const BASE_URL = "http://makeup-api.herokuapp.com/api/v1/products";
 
+const PRODUCT_COUNT = 4;
+
 const useGetRecommendedProducts = () => {
   const [recommendedProducts, setRecommendedProducts] = useState([]);
 
@@ -21,7 +23,9 @@ const useGetRecommendedProducts = () => {
       .then((response) => {
         const fetchedProducts = response.data;
         fetchedProducts.length =
-          fetchedProducts.length > 4 ? 4 : fetchedProducts.length;
+          fetchedProducts.length > PRODUCT_COUNT
+            ? PRODUCT_COUNT
+            : fetchedProducts.length;
         setRecommendedProducts(fetchedProducts);
       })
       .catch((err) => console.log(err));

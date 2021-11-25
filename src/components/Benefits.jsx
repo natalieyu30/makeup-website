@@ -23,7 +23,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <div className="container mx-auto flex flex-col md:flex-row gap-10 my-10 px-6">
+    <div className="container mx-auto flex flex-col md:flex-row gap-10 my-20 px-6">
       {benefits.map((item) => (
         <BenefitItem key={item.id} item={item} />
       ))}

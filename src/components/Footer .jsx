@@ -7,9 +7,9 @@ export default function Footer() {
   // const links = ["about", "skincare", "makeup", "supplements", "contact"];
 
   return (
-    <footer className="bg-dark text-light  p-4">
+    <footer className="bg-dark text-light  p-4 pt-12">
       <div className="flex flex-col md:flex-row flex-wrap justify-between">
-        <BrandLink classes="text-yellow mr-20" />
+        <BrandLink classes="text-yellow mr-20 mb-8" />
 
         <div className="flex flex-col md:flex-row my-5 md:my-0">
           {links.map((item, index) => (

@@ -16,6 +16,12 @@ module.exports = {
         "light-grey": "#ECECEC",
         light: "#FAFAFA",
       },
+      zIndex: {
+        "-1": -1,
+      },
+      container: {
+        padding: "0.5rem",
+      },
     },
   },
   variants: {

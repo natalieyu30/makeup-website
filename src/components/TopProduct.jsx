@@ -14,7 +14,12 @@ export default function TopProduct() {
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-6 mx-16">
           <SectionTitle text="Top Product" />
-          <ButtonLink path="/about" text="see more" />
+          <ButtonLink
+            path="/about"
+            text="see more"
+            className="hidden md:block"
+            color=""
+          />
         </div>
 
         {/* Product */}

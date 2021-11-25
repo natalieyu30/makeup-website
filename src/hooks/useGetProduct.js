@@ -19,7 +19,7 @@ const useGetProduct = () => {
 
   useEffect(() => {
     getSingleProduct();
-  }, [id]);
+  }, [id, getSingleProduct]);
 
   return { singleProduct, getSingleProduct };
 };
